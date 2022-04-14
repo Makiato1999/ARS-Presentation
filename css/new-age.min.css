@@ -67,7 +67,7 @@ section.bg-secondary {
 
 #mainNav {
     border-color: rgba(34, 34, 34, .05);
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     -webkit-transition: all .35s;
     transition: all .35s;
     font-family: Catamaran, Helvetica, Arial, sans-serif;
@@ -76,15 +76,17 @@ section.bg-secondary {
 }
 
 #mainNav .navbar-brand {
-    color: #fff;
+    /*navigation bar left-top default font color*/
+    color: rgb(255, 255, 255);
     font-family: Catamaran, Helvetica, Arial, sans-serif;
-    font-weight: 200;
+    /*navigation bar left-top font border*/
+    font-weight: 400;
     letter-spacing: 1px
 }
 
 #mainNav .navbar-brand:focus,
 #mainNav .navbar-brand:hover {
-    color: #883131
+    color: #000000
 }
 
 #mainNav .navbar-toggler {
@@ -94,14 +96,16 @@ section.bg-secondary {
 }
 
 #mainNav .navbar-nav>li>a {
-    font-size: 11px;
+    /*navigation right-top font size*/
+    font-size: 13px;
     font-family: Lato, Helvetica, Arial, sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase
 }
 
 #mainNav .navbar-nav>li>a.active {
-    color: #ad3f3f !important;
+    /*navigation right-top after select color*/
+    color: #0057b4 !important;
     background-color: transparent
 }
 
@@ -111,12 +115,12 @@ section.bg-secondary {
 
 #mainNav .navbar-nav>li>a,
 #mainNav .navbar-nav>li>a:focus {
-    color: #222
+    color: rgb(34, 34, 34)
 }
 
 #mainNav .navbar-nav>li>a:focus:hover,
 #mainNav .navbar-nav>li>a:hover {
-    color: #ad3f3f
+    color: #3f4aad
 }
 
 @media (min-width:992px) {
@@ -146,7 +150,8 @@ section.bg-secondary {
 
     #mainNav.navbar-shrink {
         border-color: rgba(34, 34, 34, .1);
-        background-color: #fff
+        /*navigation background color except first page*/
+        background-color: rgb(186, 222, 240)
     }
 
     #mainNav.navbar-shrink .navbar-brand {
@@ -165,7 +170,7 @@ section.bg-secondary {
 
     #mainNav.navbar-shrink .navbar-nav>li>a:focus:hover,
     #mainNav.navbar-shrink .navbar-nav>li>a:hover {
-        color: #ad3f3f
+        color: #0095ff
     }
 }
 
@@ -221,8 +226,9 @@ header.masthead .device-container .screen img {
         text-align: left
     }
 
+    /* first page content font size*/
     header.masthead .header-content h1 {
-        font-size: 35px
+        font-size: 25px
     }
 
     header.masthead .device-container {
@@ -430,7 +436,8 @@ footer ul li a:hover {
 }
 
 .bg-primary {
-    background: #ad3f3f !important;
+    /*second page and last page background*/
+    background: #5e7cac !important;
     color: #fff;
     background-image: url(img/cookies.jpg)
 }
@@ -483,11 +490,12 @@ h3 {
     margin-top: 30px
 }
 
+/*second page icon*/
 .icon {
     text-align: center;
     display: inline-block;
     width: 100px;
-    background: #883131;
+    background: #3865ad;
     padding: 30px;
     border-radius: 50%;
     height: 100px;
