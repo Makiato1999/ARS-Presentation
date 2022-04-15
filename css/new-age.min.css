@@ -62,7 +62,8 @@ section h2 {
 }
 
 section.bg-secondary {
-    background-color: #a7b9e1 !important
+    /*Postmortem page background*/
+    background-color: #ffffff !important
 }
 
 #mainNav {
@@ -120,7 +121,7 @@ section.bg-secondary {
 
 #mainNav .navbar-nav>li>a:focus:hover,
 #mainNav .navbar-nav>li>a:hover {
-    color: #3f4aad
+    color: #3f91ad
 }
 
 @media (min-width:992px) {
@@ -180,7 +181,7 @@ header.masthead {
     padding-top: 150px;
     padding-bottom: 100px;
     color: rgb(255, 255, 255);
-    background: url(../img/ARS-poster.jpg);
+    background: url(../img/ARS-airline2.jpg);
     background-size: cover
 }
 
@@ -190,7 +191,8 @@ header.masthead .overlay {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(25, 57, 107, 0.7);
+    /*first page hover*/
+    background: rgba(13, 51, 69, 0.5);
 }
 
 header.masthead .header-content {
@@ -223,12 +225,12 @@ header.masthead .device-container .screen img {
 
     header.masthead .header-content {
         margin-bottom: 0;
-        text-align: left
+        /*first page content text*/
     }
 
     /* first page content font size*/
     header.masthead .header-content h1 {
-        font-size: 25px
+        font-size: 26px
     }
 
     /*first page device size*/
@@ -269,6 +271,7 @@ section.download .badges .badge-link img {
 
 @media (min-width:768px) {
     section.download h2 {
+        /*vision statement page header and velocity page header*/
         font-size: 70px
     }
 }
@@ -324,7 +327,7 @@ section.features .feature-item i {
 section.cta {
     position: relative;
     padding: 250px 0;
-    background-image: url(../img/cookies2.jpg);
+    background-image: url(../img/ARS-airline3.jpg);
     background-position: center;
     background-size: cover
 }
@@ -334,6 +337,7 @@ section.cta .cta-content {
     z-index: 1
 }
 
+/* value and sucess page*/
 section.cta .cta-content h2 {
     font-size: 50px;
     max-width: 450px;
@@ -354,7 +358,8 @@ section.cta .overlay {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .5)
+    /*value and success page hover*/
+    background-color: rgba(59, 108, 133, 0.5)
 }
 
 section.contact {
@@ -438,7 +443,7 @@ footer ul li a:hover {
 
 .bg-primary {
     /*second page and last page background*/
-    background: #5e7cac !important;
+    background: #5493aa !important;
     color: #fff;
     background-image: url(img/cookies.jpg)
 }
@@ -469,7 +474,7 @@ footer ul li a:hover {
     color: #fff;
     /*first page left-bottom two button*/
     border-color: #ffffff;
-    background-color: rgb(97, 127, 209);
+    background-color: #5493aa;
 }
 
 .btn {
@@ -497,7 +502,7 @@ h3 {
     text-align: center;
     display: inline-block;
     width: 100px;
-    background: #3e6db9;
+    background: #2897e1;
     padding: 30px;
     border-radius: 50%;
     height: 100px;
