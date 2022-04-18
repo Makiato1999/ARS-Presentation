@@ -257,6 +257,17 @@
           <div class="row">
             <div id="velocity" style="width: 650px; height: 400px; margin: 0 auto"></div>
           </div>
+          <p style="padding-top: 20px; text-align: justify; ">
+            <br>
+            According to velocity, the time spent on each iteration grows, both in estimated and actual time. The
+            overall time spent shows an upward trend. This is related to the number and difficulty of tasks processed at
+            each iteration. Second, it can be seen from the graph that the actual time spent on each iteration is more
+            than the estimated time, which shows that we always underestimated the time spent during project.<br><br>
+            For iteration 1, this is our first time to use Android studio, and we spent lots of time on learning Android
+            development skills. For instance, UI layout, android version, 3-tier architecture, etc. For iteration 2, we
+            spent much time on version control. Especially on solving merge conflict and commit graph. For iteration 3,
+            we spent plenty of time on refactoring code by using design pattern.
+          </p>
 
         </div>
       </div>
@@ -267,54 +278,25 @@
     <div class="container">
       <h2>Postmortem</h2>
 
-      <h3>What went right in the development process?</h3>
+      <h3><i class="fas fa-sitemap"></i> What was the overall architecture of your system?</h3>
       <p>
-        The development process was successful in that the team was able to efficiently work together and complete
-        tasks.
-        There was good communication and engagement throughout the team on features, merge requests, and errors.
-        Each member of the team contributed in a meaningful way and everyone was able to pull their weight and own a
-        piece of the final product.
+        <img src="img/ARS-4.png" alt="architecture" style="width: 40%;">
       </p>
 
-      <h3>What went wrong in the development process?</h3>
-      <p>
-        Some areas that could have been improved upon in the development process are merge request size, as well as time
-        management.
-        Often our merge requests got very large, and as a result it became difficult to fully grasp the scope of a
-        single merge request.
-        This led to both dead code being merged, as well as code with errors in it.
+      <h3><i class="fas fa-comment-dots"></i> How did the project change from your initial (iteration 0) vision or stories, or did it work out as predicted?
+      </h3>
+      <p style="text-align: justify;">
+        There are some small changes. In iteration 2 we had technical debt, which missed or modified features,
+        but we solved them in iteration 3, such as paying it of by moving the logic layer functionality from
+        presentation to business, or moving the test files from androidTest to Test directory, etc. Overall, we work out
+        as predicted.
       </p>
 
-      <p>
-        Additionally, time management also became a large obstacle in our development process.
-        Due to the entire team being in multiple other classes, the development work often got pushed until the last
-        minute (especially in the 2nd iteration).
-        This led to frantic development, which caused its own issues such as rushed merge requests, dead code, and
-        broken tests.
-      </p>
-
-      <h3>What took the most time?</h3>
-      <p>
-        The database ended up taking really long time (possibly more than expected).
-        The bulk of the database work was done in iteration two, and it ended up taking many many hours.
-        By the time iteration 3 came around, while the database appeared to be functioning normally, there was still
-        bugs and missing functionality which also ended up taking lots of development time.
-        In hindsight, allocating more time (or knowing what to expect) would help reduce the stress caused.
-      </p>
-
-      <h3>How did the project change?</h3>
-      <p>
-        The core project idea itself didn't change. We were able to fairly accurately estimate the amount of work we
-        were capable of achieving.
-        We were able to implement recipe operations such as add/edit/duplicate/delete.
-        We were able to associate user tags to recipes, and also added organizational tools such as filtering on the
-        tags, on favourite recipes, and searching.
-      </p>
-      <p>
-        One feature that didn't make it in the timeline was the ability for a user to upload an image from their device
-        to use it in the app.
-        In the future this would be a really valuable feature to add to the app, however it had to be removed due to
-        time constraints.
+      <h3><i class="fas fa-comments"></i> Are you using any specific techniques covered in the course?</h3>
+      <p style="text-align: justify;">
+        Design pattern. In service class, we used Singleton. In RecFlightsAdapter class and MainActivity class, we used
+        Adpater in these 2 activity for show search flight list data. In MainActivity class, we used builder here to
+        build a date picker.
       </p>
     </div>
   </section>
@@ -323,7 +305,6 @@
   <section class="contact bg-primary" id="team">
     <div class="container">
       <h2>The developers behind Airline Reservation System (ARS)</h2>
-      <p class="muted">(and what we learned along the way)</p>
     </div>
     <div class="container contributors">
       <div class="row">
@@ -335,14 +316,19 @@
               <div class="name">
                 <b>Asiimwe Byaruhanga</b>
               </div>
+              <p>The Frontend guy</p>
             </a>
-            <p>The UI / frontend engineer</p>
             <ul class="points">
-              <li><span class="fa-li"><i class="fas fa-window-restore"></i></span>Make UI and manage interactions in
-                Android Studio</li>
-              <li><span class="fa-li"><i class="fas fa-balance-scale"></i></span>Balancing workloads between group
-                members</li>
-              <li><span class="fa-li"><i class="fas fa-sitemap"></i></span>3 tiered architecture design</li>
+              <li><span class="fa-li"><i class="fas fa-window-restore"></i></span>Android Ui Development
+              </li>
+              <li><span class="fa-li"><i class="fas fa-balance-scale"></i></span>Using GITLAB version control
+              </li>
+              <li><span class="fa-li"><i class="fas fa-sitemap"></i></span>Building an application with a multi-layer
+                architecture
+              </li>
+              <li><span class="fa-li"><i class="fas fa-sitemap"></i></span>Planning for a project, executing the plan,
+                and reacting to changes in the plan.
+              </li>
             </ul>
 
           </div>
@@ -355,12 +341,15 @@
               <div class="name">
                 <b>Jordon Dao</b>
               </div>
+              <p>The Database guy</p>
             </a>
-            <p>The backend / database engineer</p>
             <ul class="points">
-              <li><span class="fa-li"><i class="fas fa-database"></i></span>Connecting a database an application</li>
-              <li><span class="fa-li"><i class="fab fa-git-alt"></i></span>Git development workflow</li>
-              <li><span class="fa-li"><i class="fas fa-sitemap"></i></span>3 tiered architecture design</li>
+              <li><span class="fa-li"><i class="fas fa-plug"></i></span>Connected HSQLDB to application
+              </li>
+              <li><span class="fa-li"><i class="fas fa-window-restore"></i></span>Android studio development
+              </li>
+              <li><span class="fa-li"><i class="fas fa-database"></i></span>Db functionality</li>
+              <li><span class="fa-li"><i class="fas fa-balance-scale"></i></span>Git development workflow</li>
             </ul>
           </div>
         </div>
@@ -372,13 +361,18 @@
               <div class="name">
                 <b>Devam Patel</b>
               </div>
+              <p>The Backend guy</p>
             </a>
-            <p>The backend / tests engineer</p>
             <ul class="points">
-              <li><span class="fa-li"><i class="fab fa-git-alt"></i></span>Git development workflow</li>
-              <li><span class="fa-li"><i class="fas fa-vial"></i></span>Unit tests in Android Studio</li>
-              <li><span class="fa-li"><i class="fas fa-plug"></i></span>Connect logic back-end and database</li>
-              <li><span class="fa-li"><i class="fas fa-sitemap"></i></span>3 tiered architecture design</li>
+              <li><span class="fa-li"><i class="fab fa-git-alt"></i></span>Logic Functionality
+              </li>
+              <li><span class="fa-li"><i class="fas fa-window-restore"></i></span>Development using Android Studio
+              </li>
+              <li><span class="fa-li"><i class="fab fa-git-alt"></i></span>Develop software in group setting and with
+                efficient communication
+              </li>
+              <li><span class="fa-li"><i class="fas fa-sitemap"></i></span>3 - tier architecture design
+              </li>
             </ul>
           </div>
         </div>
@@ -391,12 +385,8 @@
                 <b>Yuhan Shao</b>
               </div>
             </a>
-            <p>The tests engineer</p>
             <ul class="points">
-              <li><span class="fa-li"><i class="fas fa-sitemap"></i></span>3-tiered architecture design</li>
-              <li><span class="fa-li"><i class="fas fa-vial"></i></span>Integration tests in Android Studio</li>
-              <li><span class="fa-li"><i class="fas fa-vial"></i></span>System tests in Android Studio</li>
-              <li><span class="fa-li"><i class="fas fa-calendar-alt"></i></span>Scheduling each iteration</li>
+              <li><span class="fa-li"><i class="fab fa-git-alt"></i></span>add sth more...</li>
             </ul>
           </div>
         </div>
@@ -408,13 +398,14 @@
               <div class="name">
                 <b>XIAORAN XIE</b>
               </div>
+              <p>The Backend guy</p>
             </a>
-            <p>The backend / tests engineer</p>
             <ul class="points">
-              <li><span class="fa-li"><i class="fas fa-plug"></i></span>Connect UI and logic back-end</li>
-              <li><span class="fa-li"><i class="fas fa-plug"></i></span>Connect logic back-end and database</li>
+              <li><span class="fa-li"><i class="fas fa-plug"></i></span>Connect UI, logic back-end, DB interface</li>
+              <li><span class="fa-li"><i class="fas fa-window-restore"></i></span>Development using Android Studio</li>
               <li><span class="fa-li"><i class="fas fa-vial"></i></span>Unit tests in Android Studio</li>
-              <li><span class="fa-li"><i class="fas fa-sitemap"></i></span>3 tiered architecture design</li>
+              <li><span class="fa-li"><i class="fas fa-sitemap"></i></span>3 - tier architecture design
+              </li>
             </ul>
           </div>
         </div>
